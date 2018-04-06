@@ -13,13 +13,6 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(names)
-  assignments = Array.new
-
-  names.each do |name|
-    room = names.index(name) + 1
-    assignments << "Hello, #{name}! You'll be assigned to room #{room}!"
-  end
-  assignments
 
   names.map.with_index do |name, index|
     "Hello, #{name}! You'll be assigned to room #{index+1}!"
